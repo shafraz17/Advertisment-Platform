@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Welcome To The Developer Connector</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="index.html"><i class="fas fa-code"></i> X!teADS</a>
+      </h1>
+      <div></div>
+
+      <ul>
+        <li>
+          <a href="home.html" title="Home">
+            <i class="fas fa-home"></i>
+            <span class="hide-sm">Home</span></a
+          >
+        </li>
+
+        <li>
+          <a href="about_us.html" title="About Us">
+            <i class="fas fa-user-friends"></i>
+            <span class="hide-sm">About Us</span></a
+          >
+        </li>
+
+        <li>
+          <a href="help.html" title="Help">
+            <i class="fas fa-question"></i>
+            <span class="hide-sm">Help</span></a
+          >
+        </li>
+
+        <li>
+          <a href="cart.html" title="Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="hide-sm">Cart</span></a
+          >
+        </li>
+
+        <li>
+          <a href="#" title="Settings">
+            <i class="fas fa-cog"></i>
+            Settings</a
+          >
+          <ul>
+            <li>
+              <a href="#" title="Profile">Profile</a>
+              <a href="#" title="Logout">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1 class="large text-primary">Add a Board</h1>
+      
+      <form class="form" action="create-profile.html">
+        <div class="form-group">
+          <select>
+              <option value="">Select Board Type</option>
+            <option value="Digital Board">Digital Board</option>
+            <option value="Billboard">billboad</option>
+          </select>
+          
+        </div>
+        <div class="form-group">
+          <h3>Select an image or a video :</h3>
+            <input type="file" name="pic" accept="image/*,video/*">
+          
+        </div>
+
+        <div style="position: absolute;">
+            <h3>Board size :</h3>
+            <br>
+            <div class="taskform-group">
+                <input type="text" placeholder="Length" name="length" required />
+                <br>
+              </div>
+
+              <div class="taskform-group">
+                  <input type="text" placeholder="Bredth" name="bredth" required />
+                  <br>
+                </div>
+
+                <div class="taskform-group">
+                    <input type="text" placeholder="Elevation" name="elevation" required />
+                    <br>
+                  </div>
+                  <a class="btn btn-light my-1" href="dashboard.html">Go Back</a>
+        <input type="submit" value="Add"class="btn btn-primary my-1" />
+        </div>
+
+        <div class="form-group" id="googleMap" style="width:100%;height:400px;margin-left: 14cm ">
+          <script>
+              function myMap() {
+              var mapProp= {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+              }
+              </script>
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224874.845491388!2d79.47850835752152!3d7.935154767947499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2slk!4v1568185227183!5m2!1sen!2slk"
+               width="500" 
+               height="400" 
+               frameborder="0" 
+               style="border:0;"
+                allowfullscreen="">
+              </iframe>
+            
+        </div>
+
+        
+      
+      </form> 
+    </section>
+  </body>
+</html>

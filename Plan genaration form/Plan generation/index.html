@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V14</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+<!--===============================================================================================-->
+
+<!-- My addings-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script>
+	$(document).ready(function () {
+	$('#digi').change(function () {
+		if (this.checked) 
+			$('#upvid').fadeIn('slow');
+		else 
+			$('#upvid').fadeOut('slow');
+		});
+	});
+</script>
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Generate Advertising Plan
+				</span>
+
+				<label class="label-input100" for="first-name">Name of the company *</label>
+				<div class="wrap-input100  validate-input">
+					<input id="first-name" class="input100" type="text" name="first-name" placeholder="Enter company name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="email">Email Address *</label>
+				<div class="wrap-input100 validate-input">
+					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="phone">Phone Number</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +94 00 0000000">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="budget">Budget</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="budget" placeholder="Enter the amount">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="reaches">Number of target customers</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="reach" placeholder="No. of customers">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="district">Expected marketing district</label>
+				<div class="wrap-input100">
+					<select class="select input100" onmousedown="if(this.options.length>6){this.size=8;}"  onchange='this.size=0;' onblur="this.size=0;"  name="select1" >
+						<option value="">Select District</option>
+						<option value="Ampara">Ampara</option>
+						<option value="Anuradhapura">Anuradhapura</option>
+						<option value="Badulla">Badulla</option>
+						<option value="Batticaloa">Batticaloa</option>
+						<option value="Colombo">Colombo</option>
+						<option value="Galle">Galle</option>
+						<option value="Gampaha">Gampaha</option>
+						<option value="Hambantota">Hambantota</option>
+						<option value="Jaffna">Jaffna</option>
+						<option value="Kalutara">Kalutara</option>
+						<option value="Kandy">Kandy</option>
+						<option value="Kegalle">Kegalle</option>
+						<option value="Kilinochchi">Kilinochchi</option>
+						<option value="Kurunegala">Kurunegala</option>
+						<option value="Mannar">Mannar</option>
+						<option value="Matale">Matale</option>
+						<option value="Matara">Matara</option>
+						<option value="Moneragala">Moneragala</option>
+						<option value="Mullaitivu">Mullaitivu</option>
+						<option value="Nuwara Eliya	">Nuwara Eliya	</option>
+						<option value="	Polonnaruwa">Polonnaruwa</option>
+						<option value="Puttalam">Puttalam</option>
+						<option value="Ratnapura">Ratnapura</option>
+						<option value="Trincomalee">Trincomalee	</option>
+						<option value="Vavuniya">Vavuniya</option>
+					</select>
+				</div>
+
+				<label class="label-input100" for="type">Type of the board</label>
+				<div class="wrap-input100" style="border: none">
+					<label class="checkbox-inline" style="margin-left: 2cm"><input type="checkbox" value="" id="digi"> Digital</label>
+					<label class="checkbox-inline" style="margin-left: 2cm"><input type="checkbox" value=""> Normal</label>
+				</div>
+
+				<div class="form-group" id="upvid" style="display: none">
+					<label class="label-input100" for="type">Upload a video</label>
+					  <input style="margin-left: 2cm" type="file" name="pic" accept="image/*,video/*"><br><br>
+					  
+					  <label class="label-input100" for="type">Duration</label>
+					  <div class="wrap-input100">
+						<input id="phone" class="input100" type="text" name="duaration" placeholder="Eg. 10.00">
+						<span class="focus-input100"></span>
+					</div>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="zmdi zmdi-arrow-right m-l-8"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Raleway"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+        />
+    
+        <title>Plan</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="safa.css" />
+
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script>
+            $(document).ready(function () {
+            $('#digi').change(function () {
+                if (this.checked) 
+                    $('#upvid').fadeIn('slow');
+                else 
+                    $('#upvid').fadeOut('slow');
+    });
+});
+        </script>
+      </head>
+
+      <body>
+        <nav class="navbar bg-dark">
+            <h1>
+              <a href="index.html"><i class="fas fa-code"></i> X!teADS</a>
+            </h1>
+            <div></div>
+      
+            <ul>
+              <li>
+                <a href="home.html" title="Home">
+                  <i class="fas fa-home"></i>
+                  <span class="hide-sm">Home</span></a
+                >
+              </li>
+      
+              <li>
+                <a href="about_us.html" title="About Us">
+                  <i class="fas fa-user-friends"></i>
+                  <span class="hide-sm">About Us</span></a
+                >
+              </li>
+      
+              <li>
+                <a href="help.html" title="Help">
+                  <i class="fas fa-question"></i>
+                  <span class="hide-sm">Help</span></a
+                >
+              </li>
+      
+              <li>
+                <a href="cart.html" title="Cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="hide-sm">Cart</span></a
+                >
+              </li>
+      
+              <li>
+                <a href="#" title="Settings">
+                  <i class="fas fa-cog"></i>
+                  Settings</a
+                >
+                <ul>
+                  <li>
+                    <a href="#" title="Profile">Profile</a>
+                    <a href="#" title="Logout">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="container">
+          <h1 class="large text-primary">Advertisment Specifications</h1>
+
+          <form class="form" action="">
+                <div class="taskform-group">
+                    <input type="text" placeholder="Name" name="length" required /><br>
+                </div>
+                <div class="taskform-group">
+                        <input type="text" placeholder="Budget" name="length" required /><br>
+                </div>
+                <select>
+                    <option value="">Select District</option>
+                    <option value="Ampara">Ampara</option>
+                    <option value="Anuradhapura">Anuradhapura</option>
+                    <option value="Badulla">Badulla</option>
+                    <option value="Batticaloa">Batticaloa</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Galle">Galle</option>
+                    <option value="Gampaha">Gampaha</option>
+                    <option value="Hambantota">Hambantota</option>
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Kalutara">Kalutara</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Kegalle">Kegalle</option>
+                    <option value="Kilinochchi">Kilinochchi</option>
+                    <option value="Kurunegala">Kurunegala</option>
+                    <option value="Mannar">Mannar</option>
+                    <option value="Matale">Matale</option>
+                    <option value="Matara">Matara</option>
+                    <option value="Moneragala">Moneragala</option>
+                    <option value="Mullaitivu">Mullaitivu</option>
+                    <option value="Nuwara Eliya	">Nuwara Eliya	</option>
+                    <option value="	Polonnaruwa">Polonnaruwa</option>
+                    <option value="Puttalam">Puttalam</option>
+                    <option value="Ratnapura">Ratnapura</option>
+                    <option value="Trincomalee">Trincomalee	</option>
+                    <option value="Vavuniya">Vavuniya</option>
+                </select><br>
+                <div class="taskform-group">
+                        <input type="text" placeholder="Number of reaches" name="length" required /><br>
+                </div>
+                <div>
+                        Type of the board :<br>
+                        <label class="checkbox-inline" style="margin-left: 2cm"><input type="checkbox" value="" id="digi"> Digital</label>
+                        <label class="checkbox-inline" style="margin-left: 2cm"><input type="checkbox" value=""> Normal</label>
+                </div>
+                
+                <div class="form-group" id="upvid" style="display: none">
+                        <h3>Upload a video :</h3><br>
+                          <input style="margin-left: 2cm" type="file" name="pic" accept="image/*,video/*"><br><br>
+                          <input type="text" placeholder="Duration" name="length" required />    
+                </div>
+                <input type="submit" value="Submit"class="btn btn-primary my-1" />
+
+          </form>
+
+          </section>
+      </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <script>
+
+$(document).ready(function(){
+  $("#path1").click(function(){
+    $("#path1").css({ fill: "#ff0000" });
+  });
+});
+
+
+            $('#btn-test1').on("click", function() {
+    $('#path1').css({ fill: "#ff0000" });
+});
+$('#btn-test2').on("click", function() {
+    $('#path2').css({ fill: "#00ff00" });
+});
+$('#btn-test3').on("click", function() {
+    $('#path3').css({ fill: "#0000ff" });
+});
+$('#btn-reset').on("click", function() {
+    $('#path1, #path2, #path3').css({ fill: "#ffffff" });
+});</script>
+    </head>
+
+    <body>
+            <div>
+            <button class="btn" id="btn-test1">Test 1</button>
+            <button class="btn" id="btn-test2">Test 2</button>
+            <button class="btn" id="btn-test3">Test 3</button>
+            <button class="btn" id="btn-reset">reset</button>
+            
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            
+            <path id="path1" fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" d="M291.451,51.919v202.54c0,0,164.521,119.846,140.146,0
+                C407.227,134.613,291.451,51.919,291.451,51.919z"/>
+            
+            <path id="path2" fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" d="M169.595,150.844c0,0-76.24,69.615-40.606,128.309
+                c35.634,58.695,155.798-51.867,151.654-85.993C276.498,159.034,177.054,89.42,169.595,150.844z"/>
+            
+            <path id="path3" fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" d="M40.332,90.466c0,0-39.911,76.119-2.691,87.83
+                c37.22,11.71,78.923-46.844,56.054-78.462C70.826,68.216,40.332,90.466,40.332,90.466z"/>
+            </svg>
+            
+            </div>
+    </body>
+</html>
